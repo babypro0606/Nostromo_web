@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostromo | Astra Hackathon Projesi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        space: { 900: '#0B0D17', 800: '#151928', 700: '#1F263C' },
+                        neon: { blue: '#00F0FF', purple: '#8A2BE2' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Ekranı kilitleyecek HİÇBİR kod kalmadı */
+        body { 
+            background-color: #0B0D17; 
+            color: #ffffff; 
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #00F0FF, #8A2BE2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-card {
+            background: rgba(31, 38, 60, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="fixed w-full z-50 glass-card border-b border-white/10 top-0 left-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-24">
+                <div class="flex items-center gap-4 md:gap-6">
+                    <img src="7e2232fd-e490-4fed-8bea-63141c17af78.jfif" alt="Nostromo Logo" class="h-16 w-16 md:h-20 md:w-20 object-contain rounded-full border border-white/10">
+                    <span class="text-xl md:text-2xl font-black tracking-widest text-white">NOSTROMO</span>
+                    <span class="hidden lg:block px-3 py-1 text-xs font-bold bg-white/10 text-neon-blue rounded-full border border-neon-blue/30">
+                        TUA ASTRA HACKATHON
+                    </span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-6">
+                        <a href="#problem" class="hover:text-neon-blue transition-colors px-3 py-2 rounded-md text-sm font-medium">Problem & Çözüm</a>
+                        <a href="#isru" class="hover:text-neon-blue transition-colors px-3 py-2 rounded-md text-sm font-medium">ISRU & Prototip</a>
+                        <a href="#teknoloji" class="hover:text-neon-blue transition-colors px-3 py-2 rounded-md text-sm font-medium">Teknoloji</a>
+                        <a href="#takim" class="hover:text-neon-blue transition-colors px-3 py-2 rounded-md text-sm font-medium">Takımımız</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="h-24 w-full"></div>
+
+    <section class="relative pt-20 pb-32 border-b border-white/5 bg-[url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=2048&auto=format&fit=crop')] bg-cover bg-center bg-blend-overlay" style="background-color: rgba(11, 13, 23, 0.85);">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-black tracking-tight mb-6 mt-10">
+                Yüksek Saflıkta <br>
+                <span class="gradient-text">Uzay İmalatı</span>
+            </h1>
+            <p class="mt-4 text-lg md:text-2xl text-gray-300 max-w-3xl mx-auto font-light leading-relaxed">
+                III-V grubu yarı iletkenlerin kütleçekimi limitlerini aşarak mikrokütleçekimi ortamında sentezlenmesi için tam otonom deney ve üretim prototipi.
+            </p>
+            <div class="mt-12 flex justify-center gap-4">
+                <a href="#problem" class="px-8 py-4 bg-neon-blue text-space-900 font-bold rounded-lg hover:bg-white transition-all shadow-[0_0_20px_rgba(0,240,255,0.4)]">
+                    Projeyi Keşfet
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="problem" class="py-24 bg-space-800 border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">Dünya'daki Limitler ve <span class="text-neon-purple">Uzay Çözümü</span></h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Sensör ve panellerin verimini düşüren fiziksel engelleri yörüngede aşıyoruz.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <div class="bg-space-700 p-8 rounded-2xl border-t-4 border-red-500 shadow-xl">
+                    <h3 class="text-2xl font-bold mb-4 flex items-center gap-2">
+                        <span class="text-red-500 text-3xl">⚠️</span> Dünya (1G) Problemleri
+                    </h3>
+                    <ul class="space-y-4 text-gray-300">
+                        <li><strong class="text-white">Kütleçekimsel Konveksiyon:</strong> Isınan ve soğuyan sıvıların yarattığı türbülans, atomik dizilimi kaotik hale getirir.</li>
+                        <li><strong class="text-white">Sedimantasyon:</strong> Ağır ve hafif elementlerin farklı hızlarda çökmesi homojenliği bozar.</li>
+                        <li><strong class="text-white">Sonuç:</strong> Optik verimi ve kuantum tutarlılığını bozan dislokasyonlar (dizilim hataları).</li>
+                    </ul>
+                </div>
+
+                <div class="bg-space-700 p-8 rounded-2xl border-t-4 border-neon-blue shadow-xl">
+                    <h3 class="text-2xl font-bold mb-4 flex items-center gap-2">
+                        <span class="text-neon-blue text-3xl">✓</span> Uzay (Mikrokütleçekimi) Çözümü
+                    </h3>
+                    <ul class="space-y-4 text-gray-300">
+                        <li><strong class="text-white">Türbülanssız Ortam:</strong> Konveksiyon ve çökelmenin durmasıyla tamamen difüzyon kontrollü büyüme.</li>
+                        <li><strong class="text-white">Kusursuz Geometri:</strong> Atomların eriyik içinde türbülansa maruz kalmadan kafese yerleşmesi.</li>
+                        <li><strong class="text-white">Sonuç:</strong> Dünya'da ulaşılması imkansız olan ultra-homojen ve hatasız kristal yapılar.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-space-700 p-6 md:p-8 rounded-2xl shadow-2xl mx-auto max-w-5xl text-center">
+                <h4 class="text-xl md:text-2xl font-bold mb-6 text-white">Dünya'da Yerçekimi vs. Uzay'da Difüzyon Etkisi</h4>
+                <img src="75ef397f-7dde-46cc-af39-184d4dfaa27f.jfif" alt="Dünya ve Uzay Karşılaştırması" class="w-full h-auto rounded-xl mx-auto block border border-white/10">
+            </div>
+        </div>
+    </section>
+
+    <section id="isru" class="py-24 bg-space-900 border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:flex lg:items-center lg:justify-between mb-16">
+                <div class="lg:w-1/2 pr-0 lg:pr-12 mb-10 lg:mb-0">
+                    <span class="text-neon-blue text-sm font-bold tracking-widest uppercase mb-2 block">Vizyonumuz</span>
+                    <h2 class="text-3xl md:text-5xl font-bold mb-6">ISRU & Asteroit Madenciliği</h2>
+                    <p class="text-gray-300 text-lg mb-6 leading-relaxed">
+                        Uzay görevlerinin en büyük kısıtlaması Dünya'ya olan lojistik bağımlılıktır. Nostromo prototipi, sadece Dünya'dan giden malzemeleri değil, <strong>uzayda halihazırda bulunan kaynakları</strong> da işlemeyi hedefler.
+                    </p>
+                    <ul class="space-y-4 text-gray-400">
+                        <li class="flex items-start gap-3"><span class="text-neon-purple text-xl">🚀</span> <span>Uzay çöplerindeki (örn: uydular) alüminyum ve yarı iletkenlerin geri dönüştürülmesi.</span></li>
+                        <li class="flex items-start gap-3"><span class="text-neon-purple text-xl">☄️</span> <span>M-tipi ve C-tipi asteroitlerden elde edilecek galyum, germanyum ve fosforun yörüngede yüksek katma değerli panellere dönüşümü.</span></li>
+                    </ul>
+                </div>
+                <div class="lg:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=1000&auto=format&fit=crop" alt="Uzaydan Dünya" class="w-full h-auto rounded-2xl border border-white/10 shadow-2xl opacity-80">
+                </div>
+            </div>
+
+            <div class="bg-space-700 p-6 md:p-8 rounded-2xl shadow-2xl mx-auto max-w-5xl text-center">
+                <h4 class="text-xl md:text-2xl font-bold mb-6 text-white">Yüksek Saflıkta Sentez ve Şekillendirme Prototipi</h4>
+                <img src="cef15d74-8085-4565-ae47-c30564843f7b.jfif" alt="Teknik Sistem Diyagramı" class="w-full h-auto rounded-xl mx-auto block border border-white/10">
+            </div>
+        </div>
+    </section>
+
+    <section id="teknoloji" class="py-24 bg-space-800 border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">Kullanılan Yöntemler</h2>
+                <p class="text-gray-400">Enerji ve hacim kısıtlamalarını aşan mühendislik çözümleri.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-space-700 p-8 rounded-xl border border-white/10 shadow-lg">
+                    <div class="text-4xl mb-6">☀️</div>
+                    <h3 class="text-xl font-bold mb-3">Foton Işını ile Eritme</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">Enerji tasarrufu için elektrikli fırınlar yerine yoğunlaştırılmış güneş ışığı veya fiber lazer kullanılarak materyaller saniyeler içinde 1000°C'ye çıkarılır.</p>
+                </div>
+
+                <div class="bg-space-700 p-8 rounded-xl border border-white/10 shadow-lg">
+                    <div class="text-4xl mb-6">🧲</div>
+                    <h3 class="text-xl font-bold mb-3">Elektromanyetik Levitasyon</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">Kirliliği (kontaminasyonu) önlemek için yarı iletkenler, yüksek frekanslı manyetik alanlarla boşlukta asılı tutularak hiçbir yüzeye temas etmeden şekillendirilir.</p>
+                </div>
+
+                <div class="bg-space-700 p-8 rounded-xl border border-white/10 shadow-lg">
+                    <div class="text-4xl mb-6">⚛️</div>
+                    <h3 class="text-xl font-bold mb-3">Helmholtz Bobinleri</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">Eriyik içindeki serbest elektronlara Lorentz kuvveti uygulayarak sıvının geometrisini korur ve akışkan içindeki mikroskobik titreşimleri sönümler.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="takim" class="py-24 bg-space-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">Takım Nostromo</h2>
+                <p class="text-neon-blue">/ ASTRA HACKATHON EKİBİ /</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-space-800 rounded-xl p-8 text-center border border-white/10 shadow-lg">
+                    <div class="w-20 h-20 mx-auto bg-space-700 rounded-full mb-4 flex items-center justify-center text-3xl font-black text-white border-2 border-neon-blue">A</div>
+                    <h3 class="text-lg font-bold text-white">Alparslan Özbek</h3>
+                    <p class="text-gray-400 text-xs mt-2">Ankara Üni., Fizik Mühendisliği</p>
+                </div>
+
+                <div class="bg-space-800 rounded-xl p-8 text-center border border-white/10 shadow-lg">
+                    <div class="w-20 h-20 mx-auto bg-space-700 rounded-full mb-4 flex items-center justify-center text-3xl font-black text-white border-2 border-neon-blue">M</div>
+                    <h3 class="text-lg font-bold text-white">Muzaffer Eser</h3>
+                    <p class="text-gray-400 text-xs mt-2">Ankara Üniversitesi, Fizik</p>
+                </div>
+
+                <div class="bg-space-800 rounded-xl p-8 text-center border border-white/10 shadow-lg">
+                    <div class="w-20 h-20 mx-auto bg-space-700 rounded-full mb-4 flex items-center justify-center text-3xl font-black text-white border-2 border-neon-blue">D</div>
+                    <h3 class="text-lg font-bold text-white">Derman Uluç Karkın</h3>
+                    <p class="text-gray-400 text-xs mt-2">Ümitköy Anadolu Lisesi</p>
+                </div>
+
+                <div class="bg-space-800 rounded-xl p-8 text-center border border-white/10 shadow-lg">
+                    <div class="w-20 h-20 mx-auto bg-space-700 rounded-full mb-4 flex items-center justify-center text-3xl font-black text-white border-2 border-neon-blue">M</div>
+                    <h3 class="text-lg font-bold text-white">Mete Açıkgöz</h3>
+                    <p class="text-gray-400 text-xs mt-2">Hacettepe Üniversitesi, Elektrik</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#05060A] border-t border-white/10 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col items-center gap-8">
+                <div class="w-full max-w-3xl">
+                    <h5 class="text-lg font-bold mb-4 text-white/80 border-b border-white/10 pb-2">Referanslar</h5>
+                    <ul class="space-y-3 text-xs text-gray-500 list-disc list-inside">
+                        <li>National Aeronautics and Space Administration (NASA), "Station Science 101 Research in Microgravity: Higher, Faster, Longer".</li>
+                        <li>TÜBİTAK Uzay, "Malzeme Bilimleri ve Fizik".</li>
+                        <li>Ch. Stenzel, Astrium GmbH, "Materials Science Experiments Under Microgravity - A Review of History, Facilities, and Future Opportunities".</li>
+                        <li>R. J. Sharpe, M. D. Wright, "Analysis of Microgravity Experiments Conducted on the Apollo Spacecraft".</li>
+                        <li>Donald R. Askeland, The Science and Engineering of Materials, "Atomic Structure, Atomic and Ionic Arrangements, Imperfections, Electronic Materials, Magnetic Materials, Photonic Materials", 6th ed.</li>
+                    </ul>
+                </div>
+                
+                <div class="w-full h-px bg-white/5"></div>
+                
+                <div class="flex flex-col md:flex-row justify-between items-center w-full gap-4">
+                    <div class="flex items-center gap-3">
+                        <img src="7e2232fd-e490-4fed-8bea-63141c17af78.jfif" alt="Nostromo Logo Mini" class="h-8 w-8 object-contain opacity-50">
+                        <span class="text-xl font-black tracking-widest text-white/30">NOSTROMO</span>
+                    </div>
+                    <p class="text-sm text-gray-600">TUA Astra Hackathon 2026</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
